@@ -5,5 +5,8 @@
     <integer name="max_counter_20">20</integer>
     <integer name="max_counter_100">100</integer>
     <dimen name="indentation_0">0dp</dimen>
+    <dimen name="indentation_8">8dp</dimen>
     <dimen name="indentation_10">10dp</dimen>
+    <dimen name="indentation_16">16dp</dimen>
+    <dimen name="view_params_100">100dp</dimen>
 </resources>

@@ -16,14 +16,22 @@
         <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-
+            <ImageView
+                    android:id="@+id/ivMainAvatar"
+                    android:layout_width="@dimen/view_params_100"
+                    android:layout_height="@dimen/view_params_100"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toLeftOf="parent"
+                    app:layout_constraintLeft_toRightOf="parent"
+                    app:imageAvatar="@{user.photo}"
+            />
 
             <android.support.design.widget.TextInputLayout
                     android:layout_width="@dimen/indentation_0"
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivMainAvatar"
                     app:counterEnabled="true"
                     app:counterMaxLength="@integer/max_counter_20"
                     app:boxBackgroundMode="outline"

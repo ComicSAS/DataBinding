@@ -22,11 +22,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding: ActivityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        user = User("Andrew", "Sukhovolskij", 21)
-        binding.setVariable(BR.user, user)
-        binding.executePendingBindings()
-        initListeners()
-        bindListeners()
+        user = User("https://avatanplus.com/files/effects/mid/5939ac7362ab215c8949a2cc.jpg","Andrew", "Sukhovolskij", 21)
+        binding.setUser(user)
+//        binding.setVariable(BR.user, user)
+//        binding.executePendingBindings()
+//        initListeners()
+//        bindListeners()
     }
 
     private fun initListeners() {
